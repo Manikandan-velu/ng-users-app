@@ -1,0 +1,15 @@
+<div class="company-details">
+    <div class="company-details__title">
+        <button [routerLink]="['/']" mat-fab color="primary" aria-label="Example icon button with a home icon">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+        <h3>Company Details</h3>
+    </div>
+    <div class="company-details__map">
+        <mat-card>
+            <app-company [website]="companyData?.website" [company]="companyData?.company"></app-company>
+            <app-address [address]="companyData?.address"></app-address>
+        </mat-card>
+        <app-map [map]="companyData?.address?.geo"></app-map>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+.company-details {
+    &__map {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 575.98px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .mat-mdc-card{
+            width: 30%;
+            padding-top: 10px;
+            @media (max-width: 575.98px) {
+                width: 90%;
+            }
+        }
+        app-map{
+            width: 60%;
+            @media (max-width: 575.98px) {
+                width: 90%;
+            }
+        }
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 10px 66px 10px;
+        @media (max-width: 575.98px) {
+            margin: 10px 30px 10px;
+        }
+        button {
+            width: 40px;
+            height: 40px;
+        }
+        h3 {
+            margin: 0 10px 5px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}

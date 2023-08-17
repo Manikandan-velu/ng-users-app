@@ -1,0 +1,21 @@
+.company {
+    padding: 10px 0 20px;
+    &_text{
+        margin: 0 20px 0 20px;
+        p{
+            margin: 0 0 5px;
+        }
+        h4{
+            font-size: 18px;
+            margin: 0 0 5px;
+        }
+        &--link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .mat-icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}

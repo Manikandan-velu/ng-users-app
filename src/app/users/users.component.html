@@ -1,0 +1,15 @@
+<div class="users-container">
+    <h2 class="title">
+      Users Profile
+    </h2>
+    <div class="users-container_card">
+      <mat-card class="" *ngFor="let user of users">
+        <div class="d-flex-row">
+          <app-user-profile [user]="{name:user.name,email:user.email,phone:user.phone}"></app-user-profile>
+          <app-address [address]="user.address"></app-address>
+        </div>
+        <app-company [website]="user.website" [company]="user.company"></app-company>
+        <button mat-raised-button (click)="moreDetails(user)">View Location</button>
+      </mat-card>
+    </div>
+  </div>

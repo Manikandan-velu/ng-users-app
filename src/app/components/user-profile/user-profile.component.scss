@@ -1,0 +1,26 @@
+.user-profile {
+    padding: 20px 0 20px 20px;
+    &_profile {
+        width: 90px;;
+        height: 90px;
+        font-size: 80px;
+        color: #666;
+    }
+    &_text{
+        margin: 0 20px 0 20px;
+        width: 170px;
+        p{
+            margin: 0 0 5px;
+        }
+        h4{
+            font-size: 18px;
+            margin: 0 0 5px;
+        }
+        .phone {
+            width: 180px;
+            mat-icon {
+                color: #919191;
+            }
+        }
+    }
+}
